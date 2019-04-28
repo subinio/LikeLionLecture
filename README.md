@@ -1,2 +1,10 @@
-# LikeLionLecture_aboutStaticWeb
-a weekly LIKELION circle lecture about HTML, CSS, Bootstrap
+# LikeLionLecture
+
+
+**March ~ April**
+
+aboutStaticWeb
+_HTML, CSS, Bootstrap
+
+
+**May~
