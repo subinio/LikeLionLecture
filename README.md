@@ -12,3 +12,5 @@ HTML, CSS, Bootstrap
 
 ## May~
 Django
+
+server, database
