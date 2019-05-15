@@ -8,4 +8,9 @@
 HTML, CSS, Bootstrap
 
 
-**May~ **
+<br>
+
+## May~
+Django
+
+server, database
