@@ -14,3 +14,5 @@ HTML, CSS, Bootstrap
 Django
 
 server, database
+
+web crawling
