@@ -1,5 +1,27 @@
-<h1>About</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>WordCount</title>
+    {% load static %}
+    <link href="{%static 'wordcount/style.css'%}" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">WORD COUNT</h1>
 
-<p>안녕하세요 이곳은 글자를 세주는 것입니다 여기서 글자를 세세요</p>
+    <div class="navbar">
+        <a href="{%url 'home'%}">HOME</a>
+        <a href="{%url 'about'%}">ABOUT</a>
+    </div>
 
-<a href="{%url 'home'%}">Home 으로 돌아가기</a>
+    <div class="content">
+        <h1 class="content_name">ABOUT</h1>
+        <p id="about_p">Hello! This is to help you to count the words.<br>
+            Please use this, more and more. After using this, <br>
+            you can send the feedback about this function by e-mail below.</p>
+        <p id="email">subinjin22@gamil.com</p>
+        
+        <a href="{%url 'home'%}">Back to Home</a>
+    </div>
+</body>
+</html>
