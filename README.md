@@ -16,3 +16,5 @@ Django
 server, database
 
 web crawling
+
+wordcount,blog
