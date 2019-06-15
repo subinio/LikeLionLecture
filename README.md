@@ -13,7 +13,7 @@ HTML, CSS, Bootstrap
 ## May~
 Django
 
-server, database
+server, database, model
 
 web crawling
 
