@@ -1,0 +1,105 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    height: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.title{
+    color : #519D9E;
+    float : left;
+    margin:0px;
+}
+.navbar{
+    float : right;
+}
+
+.navbar a{
+    text-decoration: none;
+    color : black;
+    margin: 0px 10px;
+}
+
+.content{
+    margin-top: 100px;
+    clear: both;
+}
+
+textarea{
+    width: 97.4%;
+    height: 200px;
+    border-radius : 10px;
+    outline: none !important;
+    border-color: #519D9E;
+    padding: 10px;
+}
+
+input{
+    width: 100%;
+    margin: 30px 0px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    outline: none !important;
+    border: 1px solid #519D9E;
+    background-color: #519D9E;
+    color: white;
+    font-size: 150%;
+}
+
+.content_name{
+    text-align:center;
+    font-size: 20px;
+    color:#519D9E;
+    border-bottom: 1px solid #519D9E;
+    padding: 10px;
+}
+
+#about_p{
+    text-align: center;
+    margin: 30px 0px;
+}
+#email{
+    text-align: center;
+
+}
+
+.your_input,
+.word_count,
+.letter_count,
+.sentence_count{
+    width:97.4%;
+    margin-top: 20px; 
+    padding: 10px;
+
+    border:1px solid #519D9E;
+    border-radius: 10px;
+}
+
+h4{
+    margin: 0px;
+    color: #519D9E;
+}
+
+.your_input p,
+.word_count p,
+.letter_count p,
+.sentence_count p{
+    text-align: center;
+}
+
+.content a{
+    text-align: center;
+    text-decoration: none;
+    background-color : #519D9E;
+    color:white;
+    padding: 15px;
+    border : 1px solid #519D9E;
+    border-radius: 5px;
+}
+
+.btn{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}

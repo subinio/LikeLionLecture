@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WordCount</title>
+    {% load static %}
+    <link href="{%static 'wordcount/style.css'%}" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">WORD COUNT</h1>
+
+    <div class="navbar">
+        <a href="{%url 'home'%}">HOME</a>
+        <a href="{%url 'about'%}">ABOUT</a>
+    </div>
+    <div class="content">
+        <p class="greeting">Welcome. You can count the words here :)</p>
+        
+        <form action="{%url 'result'%}">
+            <textarea name=fulltext></textarea>
+            <br>
+            <input type="submit" value="COUNT">
+        </form>
+</div>
+
+</body>
+</html>
