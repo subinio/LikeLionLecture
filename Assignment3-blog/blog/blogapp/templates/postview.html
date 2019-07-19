@@ -6,12 +6,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../static/js/javascript.js"></script>
 </head>
-
 <body onload="applyChanges()">
-
-        <input type='hidden' id='color' value={{color}}>
-        <input type='hidden' id='image' value={{image}}>
-        
+    
+    <input type='hidden' id='color' value={{color}}>
+    
     <nav class="navbar navbar-expand-lg navbar-dark" name="b-col">
         <a class="navbar-brand" href="{% url 'home' %}">BLOG</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,11 +18,11 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'postview' %}">Post</a>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'postview' %}">Post<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'new' %}">Write</a>
@@ -52,45 +50,28 @@
             </li>
             
         </div>
-    </nav>   
-
-    <main role="main">
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron" style="background: url('../../static/homeboard.jpg');" >
-            <div class="container">
-            <h1 class="display-3" style="text-align: center; color:white">{{title}}</h1>
-            <br><br>
-            <p style="text-align: center;">
-                <a class="btn btn-primary btn-lg" href="{% url 'postview' %}" role="button" name="b-col" style="font-size: 15px; border-color:transparent;" >블로그 글 전체보기 &raquo;</a>
-            </p>
-            </div>
-        </div>    
-
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-
-                {%for blog in blogs.all %}
-                <div class="col-md-4" style="padding: 30px;">
-                    <h3>{{blog.title}}</h3>
-                    <br>
-                    <h6 class="card-subtitle mb-2 text-muted">{{blog.pub_date}}</h6>
-                    <p class="card-text">{{blog.summary}}</p>
-                    <p style="text-align: right;"><a href="{% url 'detail' blog.id %}" name="col">View details &raquo;</a></p>
-                </div>
-                {%endfor%}
-
-            </div>
-        
-            <hr>
-        
-        </div> <!-- /container -->
-    
-    </main>
+    </nav>      
 
     <br>
+
+    {%for blog in blogs.all %}
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">{{blog.title}} </h2>
+                    <h6 class="card-subtitle mb-2 text-muted">{{blog.pub_date}}</h6>
+                    <p class="card-text">{{blog.summary}}</p>
+                    <a href="{% url 'detail' blog.id %}" class="card-link" name="col">...more</a>
+                </div>
+            </div>
+            <br>
+        </div>
+    {%endfor%}
+
+    <hr>
+    <br>
     <footer class="container">
-        <p style="text-align: center;" name="col">&copy;LIKELION 2019 PROJECT made by subinio </p>
+        <p style="text-align: center;" name="col" >&copy;LIKELION 2019 PROJECT made by subinio </p>
     </footer>
           
     <br>

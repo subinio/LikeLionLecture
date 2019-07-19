@@ -8,10 +8,9 @@
 </head>
 
 <body onload="applyChanges()">
-
-        <input type='hidden' id='color' value={{color}}>
-        <input type='hidden' id='image' value={{image}}>
-        
+    
+    <input type='hidden' id='color' value={{color}}>
+ 
     <nav class="navbar navbar-expand-lg navbar-dark" name="b-col">
         <a class="navbar-brand" href="{% url 'home' %}">BLOG</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +19,8 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'postview' %}">Post</a>
@@ -54,46 +53,37 @@
         </div>
     </nav>   
 
-    <main role="main">
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron" style="background: url('../../static/homeboard.jpg');" >
-            <div class="container">
-            <h1 class="display-3" style="text-align: center; color:white">{{title}}</h1>
-            <br><br>
-            <p style="text-align: center;">
-                <a class="btn btn-primary btn-lg" href="{% url 'postview' %}" role="button" name="b-col" style="font-size: 15px; border-color:transparent;" >블로그 글 전체보기 &raquo;</a>
-            </p>
-            </div>
-        </div>    
+    <br>
+    <div class="container" style="text-align: center;" name="col">
+        <form action="{% url 'settings' %}" method="POST">
+        {% csrf_token %}
+        <label for="title">Title :  </label>
+        <input type="text" name="title" value="{{title}}">
 
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
+        <br><br>
 
-                {%for blog in blogs.all %}
-                <div class="col-md-4" style="padding: 30px;">
-                    <h3>{{blog.title}}</h3>
-                    <br>
-                    <h6 class="card-subtitle mb-2 text-muted">{{blog.pub_date}}</h6>
-                    <p class="card-text">{{blog.summary}}</p>
-                    <p style="text-align: right;"><a href="{% url 'detail' blog.id %}" name="col">View details &raquo;</a></p>
-                </div>
-                {%endfor%}
+        <label for="color">Main Color :  </label>
+        <input type="color" name="color" value={{color}}>
 
-            </div>
-        
-            <hr>
-        
-        </div> <!-- /container -->
-    
-    </main>
+        <br><br>
 
+        <label for="image">Background Image :  </label>
+        <input type="file" name="image">
+
+        <br><br>
+
+        <input class="btn btn-dark" type="submit" value="변경하기" style="border-color:transparent;" name="b-col">
+    </form>
+
+    </div>
+
+    <hr>
     <br>
     <footer class="container">
         <p style="text-align: center;" name="col">&copy;LIKELION 2019 PROJECT made by subinio </p>
     </footer>
           
     <br>
+    
 </body>
-
-</html>
+    

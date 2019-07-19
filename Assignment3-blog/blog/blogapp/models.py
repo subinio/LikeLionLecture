@@ -1,5 +1,5 @@
 from django.db import models
-
+from colorful.fields import RGBColorField
 # Create your models here.
 
 class Blog(models.Model):
@@ -12,3 +12,9 @@ class Blog(models.Model):
         
     def summary(self):
         return self.body[:100]
+
+class Setting(models.Model):
+    title = models.CharField(max_length=20)
+    color = RGBColorField()
+    image = models.ImageField(upload_to='images/')
+
