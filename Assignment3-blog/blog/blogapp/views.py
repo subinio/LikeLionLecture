@@ -71,7 +71,7 @@ def settings(request):
         setting = Setting()
         setting.title = request.POST.get('title', '')
         setting.color = request.POST.get('color', '')
-        setting.image = 'images/'+ request.POST.get('image', '')
+        setting.image = 'images/'+ request.POST.get('image', '')  
         setting.save()
         return redirect('home')
     else:
