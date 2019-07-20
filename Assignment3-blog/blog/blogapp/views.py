@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Blog
 from .models import Setting
+from .forms import SettingForm
 
 # Create your views here.
 
@@ -60,6 +61,7 @@ def postview(request):
 
     return render(request, 'postview.html', {'blogs':blogs, 'color':color})
 
+
 def settings(request):
     settings = Setting.objects
    
@@ -68,11 +70,10 @@ def settings(request):
         color=a.color
 
     if request.method == 'POST':
-        setting = Setting()
-        setting.title = request.POST.get('title', '')
-        setting.color = request.POST.get('color', '')
-        setting.image = 'images/'+ request.POST.get('image', '')  
-        setting.save()
-        return redirect('home')
+        form = SettingForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
     else:
-        return render(request, 'settings.html', {'title':title, 'color':color})
+        form = SettingForm(initial={'title': title, 'color':color})
+        return render(request, 'settings.html', {'title':title, 'color':color, 'form':form})
