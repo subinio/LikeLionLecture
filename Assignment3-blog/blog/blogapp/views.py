@@ -10,10 +10,24 @@ def home(request):
     blogs = Blog.objects
     settings = Setting.objects
     
+    cnt=0
     for a in settings.all():
         title=a.title
         color=a.color
         image=a.image
+        cnt+=1
+
+    if cnt==0:
+        st = Setting()
+        st.title="SUBIN BLOG"
+        st.color="#ac4e4e"
+        st.image="images/homeboard.jpg"
+        st.save()
+
+        for a in settings.all():
+            title=a.title
+            color=a.color
+            image=a.image
     
     return render(request, 'home.html', {'blogs':blogs, 'settings':settings, 'title':title, 'color':color, 'image':image} )
 
