@@ -10,7 +10,7 @@
 * Basic of Python Language
 * Django
 * Web Crawling
-* Deploy
+* Deploy (AWS, Heroku, PythonAnywhere)
 
 <br><br>
 
@@ -21,6 +21,9 @@
 |5~6월|Django, web crawling|
 |6~7월|Django, Javascript|
 |8~|   |
+|7/20|아이디어톤|
+|8/9-8/10|해커톤|
+
 
 <br><br>
 
@@ -49,6 +52,18 @@ terminal을 이용하여 아래 명령어를 차례로 입력
 
 <br><br>
 
-## Assignment 3
-In progress...
+## Assignment 3 - Blog and Portfolio
+### 실행방법
+terminal을 이용하여 아래 명령어를 차례로 입력
+1. source myvenv/Scripts/activate
+2. cd blog
+3. python manage.py runserver
 
+<br>
+
+### 초기화면 및 실행 화면
+![blogscreenshot](https://user-images.githubusercontent.com/49118667/61642567-195fc480-acdc-11e9-931c-012b09e21be2.JPG)
+
+
+### 배포 url
+[subinio.pythonanywhere.com]
