@@ -21,6 +21,9 @@
 |5~6월|Django, web crawling|
 |6~7월|Django, Javascript|
 |8~|   |
+
+|Date|Content|
+|:--:|:--:|
 |7/20|아이디어톤|
 |8/9-8/10|해커톤|
 
@@ -66,4 +69,4 @@ terminal을 이용하여 아래 명령어를 차례로 입력
 
 
 ### 배포 url
-[subinio.pythonanywhere.com]
+[subinio.pythonanywhere.com](subinio.pythonanywhere.com)
