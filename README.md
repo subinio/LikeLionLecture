@@ -37,7 +37,7 @@
 <br>
 
 ### 초기 화면
-![web_img](https://user-images.githubusercontent.com/49118667/60120294-78a0e680-97bb-11e9-895c-aeddb397db51.png)
+![web_img](https://user-images.githubusercontent.com/49118667/60120294-78a0e680-97bb-11e9-895c-aeddb397db51.png) 
 
 <br><br>
 
@@ -53,6 +53,13 @@ terminal을 이용하여 아래 명령어를 차례로 입력
 ### 초기화면 및 실행 화면
 ![wordcount_img](https://user-images.githubusercontent.com/49118667/60120009-d1bc4a80-97ba-11e9-918b-33cabc4b848b.png)
 
+<br>
+
+### 기능
+* 글자수 세기
+* 문장수 세기
+* 단어수 세기
+
 <br><br>
 
 ## Assignment 3 - Blog and Portfolio
@@ -67,6 +74,13 @@ terminal을 이용하여 아래 명령어를 차례로 입력
 ### 초기화면 및 실행 화면
 ![blogscreenshot](https://user-images.githubusercontent.com/49118667/61642567-195fc480-acdc-11e9-931c-012b09e21be2.JPG)
 
+### 기능
+* 글 작성
+* 글 미리보기 및 전체보기
+* 포트폴리오
+* Settings 탭을 통한 메인 색, 배경이미지, 타이틀 변경(파일 업로드 form,  javascript)
+
+<br>
 
 ### 배포 url
 [subinio.pythonanywhere.com](subinio.pythonanywhere.com)
