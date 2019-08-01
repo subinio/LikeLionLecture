@@ -20,7 +20,8 @@
 |3~4월|HTML, CSS, Bootstrap|
 |5~6월|Django, web crawling|
 |6~7월|Django, Javascript|
-|8~|   |
+|8월|Django, 프로젝트|
+|9~|   |
 
 |Date|Content|
 |:--:|:--:|
@@ -31,25 +32,17 @@
 <br><br>
 
 ## Assignment 1 - introduction of web service
-### 실행 방법
-해당 과제는 html과 css파일로만 이루어져 있어 index.html로 내용 확인 가능
+### 초기 화면
+![web_img](https://user-images.githubusercontent.com/49118667/60120294-78a0e680-97bb-11e9-895c-aeddb397db51.png) 
 
 <br>
 
-### 초기 화면
-![web_img](https://user-images.githubusercontent.com/49118667/60120294-78a0e680-97bb-11e9-895c-aeddb397db51.png) 
+### 실행 방법
+해당 과제는 html과 css파일로만 이루어져 있어 index.html로 내용 확인 가능
 
 <br><br>
 
 ## Assignment 2 - word counter
-### 실행방법
-terminal을 이용하여 아래 명령어를 차례로 입력
-1. source myvenv/Scripts/activate
-2. cd djangoproject
-3. python manage.py runserver
-
-<br>
-
 ### 초기화면 및 실행 화면
 ![wordcount_img](https://user-images.githubusercontent.com/49118667/60120009-d1bc4a80-97ba-11e9-918b-33cabc4b848b.png)
 
@@ -60,25 +53,39 @@ terminal을 이용하여 아래 명령어를 차례로 입력
 * 문장수 세기
 * 단어수 세기
 
+<br>
+
+### 실행방법
+terminal을 이용하여 아래 명령어를 차례로 입력
+```bash
+$ source myvenv/Scripts/activate
+$ cd djangoproject
+$ python manage.py runserver
+```
+
 <br><br>
 
 ## Assignment 3 - Blog and Portfolio
-### 실행방법
-terminal을 이용하여 아래 명령어를 차례로 입력
-1. source myvenv/Scripts/activate
-2. cd blog
-3. python manage.py runserver
-
-<br>
-
 ### 초기화면 및 실행 화면
 ![blogscreenshot](https://user-images.githubusercontent.com/49118667/61642567-195fc480-acdc-11e9-931c-012b09e21be2.JPG)
+
+<br>
 
 ### 기능
 * 글 작성
 * 글 미리보기 및 전체보기
 * 포트폴리오
 * Settings 탭을 통한 메인 색, 배경이미지, 타이틀 변경(파일 업로드 form,  javascript)
+
+<br>
+
+### 실행방법
+```bash
+terminal을 이용하여 아래 명령어를 차례로 입력
+$ source myvenv/Scripts/activate
+$ cd blog
+$ python manage.py runserver
+```
 
 <br>
 
