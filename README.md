@@ -80,8 +80,8 @@ $ python manage.py runserver
 <br>
 
 ### 실행방법
-```bash
 terminal을 이용하여 아래 명령어를 차례로 입력
+```bash
 $ source myvenv/Scripts/activate
 $ cd blog
 $ python manage.py runserver
