@@ -21,7 +21,8 @@
 |5~6월|Django, web crawling|
 |6~7월|Django, Javascript|
 |8월|Django, 프로젝트|
-|9~|   |
+|9~10월|프로젝트|
+|11~|    |
 
 |Date|Content|
 |:--:|:--:|
