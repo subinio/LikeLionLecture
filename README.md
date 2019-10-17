@@ -22,7 +22,7 @@
 |6~7월|Django, Javascript|
 |8월|Django, 프로젝트|
 |9~10월|프로젝트|
-|11~|    |
+|11~|리액트|
 
 |Date|Content|
 |:--:|:--:|
